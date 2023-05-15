@@ -25,7 +25,7 @@ client.on_connect = on_connect
 client.on_message = on_message
 client.on_publish = on_publish
 
-client.connect("localhost", 1883, 60)
+client.connect("192.168.1.5", 1883, 60)
 
 # Publish a message.
 client.publish("location/NewLocation", '{"xCoordinate":100,"yCoordinate":0,"zCoordinate":0}')
@@ -40,33 +40,33 @@ client.loop_start()
 
 anchor_data = {}
 AP_location= {
-    'D713':{
-     'POS': 0,
-      'SSID': '1127',
-      'x': 3.66,
-      'y': 0.0,
+    'D62A':{
+     'POS': 1,
+      'SSID': 'D62A',
+      'x': 1.00,
+      'y': 1.45,
       'z': 0.8,
     },
-    'D018':{
+    '5A33':{
       'POS': 1,
-      'SSID': '112E',
-      'x': 0.6,
-      'y': 1.47,
-      'z': 0.5,
+      'SSID': '5A33',
+      'x': 1.00,
+      'y': 5.00,
+      'z': 0.80,
     },
-    '5A0A':{
+    'CBAF':{
       'POS': 2,
-      'SSID': 'C02A',
-      'x': 7.2,
-      'y': 2.8,
-      'z': 0.0,
+      'SSID': 'CBAF',
+      'x': 9.00,
+      'y': 5.00,
+      'z': 0.80,
     },
-    'D6BB':{
+    '868C':{
       'POS': 3,
-      'SSID': '120F',
-      'x': 4.35,
-      'y': 5.21,
-      'z': 0.0,
+      'SSID': '868C',
+      'x': 7.00,
+      'y': 1.00,
+      'z': 0.80,
     }
 }
 
